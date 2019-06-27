@@ -35,7 +35,17 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+.scrolling-wrapper-flexbox{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
 
+}
+.card {
+  width: 100%;
+  flex: 0 0 auto;
+  display: inline-block;
+}
 @media (min-width: 992px){
 .col-lg-push-5 {
     left: 41.666667%;
@@ -63,8 +73,21 @@
     right: 58.333333%;
 }}
 
+.gifMaybe {
+  padding
+  position: relative;
+  float: left;
+  width:  auto;
+  height: 40%;
+  background-position: 50% 50%;
+  background-repeat:   no-repeat;
+  background-size:    cover;
+}
+
 .gif {
-    width: 100%;
+  vertical-align: middle;
+  padding-top: 11%;
+  width: 100%;
     max-width: 500px;
     display: block;
     margin: 0 auto;
