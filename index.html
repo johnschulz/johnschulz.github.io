@@ -8,7 +8,9 @@
     <title>John Schulz</title>
 
     <!-- Bootstrap core CSS -->
-
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://twitter.github.io/bootstrap/assets/js/bootstrap-transition.js"></script>
+    <script type="text/javascript" src="http://twitter.github.io/bootstrap/assets/js/bootstrap-collapse.js"></script>
     <link rel="stylesheet" href="css/bootstrap.css">
     <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
@@ -23,7 +25,7 @@
     <link href="css/resume.css" rel="stylesheet">
   </head>
   <body id="page-top" data-gr-c-s-loaded="true">
-    <nav class="navbar navbar-expand-lg navbar-dark  fixed-top" style= "background-color: rgb(26, 49, 79)" id="sideNav">
+    <nav class="navbar navbar-expand-lg navbar-dark  navbar-collapse fixed-top" style= "background-color: rgb(26, 49, 79)" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">Home</span>
         <span class="d-none d-lg-block">
@@ -53,9 +55,9 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#photos">Photos</a>
           </li>
@@ -75,14 +77,7 @@
             <br>Computer Science Major · GPA: 3.53</br>
           </div>
           <p class="mb-5">
-            I am currently a sophomore at UC Berkeley and am intending on majoring in Computer Science and Data Science. My professional interests range from banking to software development to data analysis. I have previously experienced with API's, databases in SQL, and a number of programming languages such as Java, Python, and Swift. In my free time I enjoy reading, being in nature, and competing in sports.           <ul class="list-inline list-social-icons mb-0">
-            <li class="list-inline-item">
-              <a href="https://www.facebook.com/john.schulz.9">
-                <span class="fa-stack fa-lg">
-                  <i class="fab fa-facebook fa-circle fa-stack-2x"></i>
-                </span>
-              </a>
-            </li>
+            I am currently a third year Computer Science major at the University of California, Berkeley. My professional interests range from banking to software development to data analysis. I have previously experienced with API's, databases in SQL, and a number of programming languages such as Java, Python, and JavaScript React. In my free time I enjoy reading, being in nature, and competing in sports. <ul class="list-inline list-social-icons mb-0">
             <li class="list-inline-item">
               <a href="https://www.linkedin.com/in/john-schulz-018698155/">
                 <span class="fa-stack fa-lg">
@@ -100,8 +95,13 @@
           </ul>
         </div>
       </section>
+
       <section class = "resume-section p-3 p-lg-5 d-flex flex-column" id = "projects">
         <h2 class="mb-5">Projects</h2>
+        <a class="btn" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style ="text-align: left; color: white; background-color: 495057">
+          ▪ CS61a: The Structure and Interpretation of Computer Programs
+        </a>
+        <div class="collapse" id="collapseExample">
       <div class=" scrolling-wrapper-flexbox">
         <div class="card">
           <div class="container">
@@ -110,7 +110,7 @@
       				<h2 class="display-5 centerText-lg" >The Game of Hog <a href="https://github.com/johnschulz/Hog" target="_blank"><span class="fa-stack fa-small">
                 <i style= "color: rgb(26, 49, 79" class="fab fa-github fa-circle fa-stack-1x"></i>
               </span></a></h2>
-      				<p class="indent">Project Description: The Game of Hog is a two player dice game. Each turn a player chooses the number of di to roll. For reference there are more detailed rules here.</p>
+      				<p class="indent">The Game of Hog is a two player dice game. Each turn a player chooses the number of di to roll. The first player to 100 points wins the game.</p>
       			</div>
       			<div class="col-lg-5">
       				<img class="gif" style ="float: right!important; vertical-align: middle;" src="gif/hog_square.gif" data-src="gif/hog_square.gif">
@@ -125,7 +125,7 @@
       				<h2 class="display-5 centerText-lg">Yelp Map <a href="https://github.com/johnschulz/maps" target="_blank"><span class="fa-stack fa-small">
                 <i style= "color: rgb(26, 49, 79" class="fab fa-github fa-circle fa-stack-1x"></i>
               </span></a></h2>
-      				<p class="indent">Project Description</p>
+      				<p class="indent">This Yelp Map uses Yelp's academic data set and machine learning principles to visualize restaurant ratings in Berkeley. The visualization is a Voronoi diagram with yellow shading the highest ratings and blue shading the lowest ratings.</p>
       			</div>
       			<div class="col-lg-5">
       				<img class="gif" style ="float: right!important; vertical-align: middle;" src="gif/maps_square.gif" data-src="gif/maps_square.gif">
@@ -140,7 +140,7 @@
               <h2 class="display-5 centerText-lg" >Ants<a href="https://github.com/johnschulz/Ants" target="_blank"><span class="fa-stack fa-small">
                 <i style= "color: rgb(26, 49, 79" class="fab fa-github fa-circle fa-stack-1x"></i>
               </span></a></h2>
-              <p class="indent">Project Description</p>
+              <p class="indent">Ants vs Some Bees is a one person game modeled after Plants vs. Zombies. In this version, users select specific types of ants, each with unique characteristics, to fight against a swarm of bees.</p>
             </div>
             <div class="col-lg-5" style = "vertical-align: middle">
               <img class="gif" style ="float: right!important; vertical-align: middle;" src="gif/ants_square.gif" data-src="gif/ants_square.gif">
@@ -155,7 +155,7 @@
               <h2 class="display-5 centerText-lg">Scheme Interpreter<a href="https://github.com/johnschulz/Scheme-Interpreter" target="_blank"><span class="fa-stack fa-small">
                 <i style= "color: rgb(26, 49, 79" class="fab fa-github fa-circle fa-stack-1x"></i>
               </span></a></h2>
-              <p class="indent">Project Description</p>
+              <p class="indent">This Scheme Interpreter was developed using Python. I used structural programming and Read-Eval-Print-Loop computer science concepts to implement this interpreter.</p>
             </div>
             <div class="col-lg-5" style = "vertical-align: middle">
               <img class="gif" style ="float: right!important; vertical-align: middle;" src="gif/scheme_square.gif" data-src="gif/scheme_square.gif">
@@ -165,56 +165,192 @@
 
 
 
-        <div class="card"><div class="container">
-          <div class="row">
-            <div class="col-lg-7">
-              <h2 class="display-5 centerText-lg" >Enigma<a href="https://github.com/johnschulz/Enigma" target="_blank"><span class="fa-stack fa-small">
-                <i style= "color: rgb(26, 49, 79" class="fab fa-github fa-circle fa-stack-1x"></i>
-              </span></a></h2>
-              <p class="indent">Project Description</p>
+
+
+      </div></div>
+
+
+
+
+
+      <a class="btn" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1" style ="text-align: left; color: white; background-color: 495057">
+        ▪ CS61b : Data Structures
+      </a>
+      <div class="collapse" id="collapseExample1">
+    <div class=" scrolling-wrapper-flexbox">
+
+
+
+      <div class="card"><div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <h2 class="display-5 centerText-lg" >Enigma<a href="https://github.com/johnschulz/Enigma" target="_blank"><span class="fa-stack fa-small">
+              <i style= "color: rgb(26, 49, 79" class="fab fa-github fa-circle fa-stack-1x"></i>
+            </span></a></h2>
+            <p class="indent">The Enigma Machine was an encryption machine which is most well known for its use during World War II. I used object oriented programming to model the physical machine's permutations, rotors, and plugboard.</p>
             </div>
-            <div class="col-lg-5">
-              <img class="gif" style ="float: right!important; vertical-align: middle;" src="gif/enigma_square.gif" data-src="gif/enigma_square.gif">
-            </div>
+          <div class="col-lg-5">
+            <img class="gif" style ="float: right!important; vertical-align: middle;" src="gif/enigma_square.gif" data-src="gif/enigma_square.gif">
           </div>
+        </div>
 
-        </div></div>
-
-
-        <div class="card"><div class="container">
-          <div class="row">
-            <div class="col-lg-7">
-              <h2 class="display-5 centerText-lg">Game of the Amazons<a href="https://github.com/johnschulz/Game-of-the-Amazons" target="_blank"><span class="fa-stack fa-small">
-                <i style= "color: rgb(26, 49, 79" class="fab fa-github fa-circle fa-stack-1x"></i>
-              </span></a></h2>
-              <p class="indent">Project Description</p>
-            </div>
-            <div class="col-lg-5">
-              <img class="gif" style ="float: right!important; vertical-align: middle;" src="gif/amazons_square.gif" data-src="gif/amazons_square.gif">
-            </div>
-          </div></div></div>
+      </div></div>
 
 
-
-        <div class="card"><div class="container">
-          <div class="row">
-            <div class="col-lg-7">
-              <h2 class="display-5 centerText-lg">Graphs<a href="https://github.com/johnschulz/Graphs" target="_blank"><span class="fa-stack fa-small">
-                <i style= "color: rgb(26, 49, 79" class="fab fa-github fa-circle fa-stack-1x"></i>
-              </span></a></h2>
-              <p class="indent">Project Description</p>
-            </div>
-            <div class="col-lg-5">
-              <img class="gif" style ="float: right!important; vertical-align: middle;" src="gif/graphs_square.gif" data-src="gif/graphs_square.gif">
-            </div>
+      <div class="card"><div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <h2 class="display-5 centerText-lg">Game of the Amazons<a href="https://github.com/johnschulz/Game-of-the-Amazons" target="_blank"><span class="fa-stack fa-small">
+              <i style= "color: rgb(26, 49, 79" class="fab fa-github fa-circle fa-stack-1x"></i>
+            </span></a></h2>
+            <p class="indent">The Game of the Amazons is a two player game where each player starts with four queens that can move and throw spears. The game is won when one player's queens are surrounded by spears. I used a game tree to implement an AI which allows players to play against a CPU.</p>
           </div>
+          <div class="col-lg-5">
+            <img class="gif" style ="float: right!important; vertical-align: middle;" src="gif/amazons_square.gif" data-src="gif/amazons_square.gif">
+          </div>
+        </div></div></div>
 
-          <!-- Divider -->
-          <hr class="m-y-2">
-        </div></div>
 
 
+      <div class="card"><div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <h2 class="display-5 centerText-lg">Graphs<a href="https://github.com/johnschulz/Graphs" target="_blank"><span class="fa-stack fa-small">
+              <i style= "color: rgb(26, 49, 79" class="fab fa-github fa-circle fa-stack-1x"></i>
+            </span></a></h2>
+            <p class="indent">This project consisted of implement a graph package including a number of traversals and searches. The graph package was subsequently used to create a navigation system and Make GNU system.</p>
+          </div>
+          <div class="col-lg-5">
+            <img class="gif" style ="float: right!important; vertical-align: middle;" src="gif/graphs_square.gif" data-src="gif/graphs_square.gif">
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <hr class="m-y-2">
+      </div></div>
+
+    </div></div>
+
+
+
+
+    <!-- <a class="btn" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2" style ="text-align: left; color: white; background-color: 495057">
+      ▪ CS61c : Great Ideas in Computer Architecture
+    </a>
+    <div class="collapse" id="collapseExample2">
+  <div class=" scrolling-wrapper-flexbox">
+
+
+
+    <div class="card"><div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <h2 class="display-5 centerText-lg" >Enigma<a href="https://github.com/johnschulz/Enigma" target="_blank"><span class="fa-stack fa-small">
+            <i style= "color: rgb(26, 49, 79" class="fab fa-github fa-circle fa-stack-1x"></i>
+          </span></a></h2>
+          <p class="indent">The Enigma Machine was an encryption machine which is most well known for its use during World War II. I used object oriented programming to model the physical machine's permutations, rotors, and plugboard.</p>
+          </div>
+        <div class="col-lg-5">
+          <img class="gif" style ="float: right!important; vertical-align: middle;" src="gif/enigma_square.gif" data-src="gif/enigma_square.gif">
+        </div>
       </div>
+
+    </div></div>
+
+
+    <div class="card"><div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <h2 class="display-5 centerText-lg">Game of the Amazons<a href="https://github.com/johnschulz/Game-of-the-Amazons" target="_blank"><span class="fa-stack fa-small">
+            <i style= "color: rgb(26, 49, 79" class="fab fa-github fa-circle fa-stack-1x"></i>
+          </span></a></h2>
+          <p class="indent">The Game of the Amazons is a two player game where each player starts with four queens that can move and throw spears. The game is won when one player's queens are surrounded by spears. I used a game tree to implement an AI which allows players to play against a CPU.</p>
+        </div>
+        <div class="col-lg-5">
+          <img class="gif" style ="float: right!important; vertical-align: middle;" src="gif/amazons_square.gif" data-src="gif/amazons_square.gif">
+        </div>
+      </div></div></div>
+
+
+
+    <div class="card"><div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <h2 class="display-5 centerText-lg">Graphs<a href="https://github.com/johnschulz/Graphs" target="_blank"><span class="fa-stack fa-small">
+            <i style= "color: rgb(26, 49, 79" class="fab fa-github fa-circle fa-stack-1x"></i>
+          </span></a></h2>
+          <p class="indent">This project consisted of implement a graph package including a number of traversals and searches. The graph package was subsequently used to create a navigation system and Make GNU system.</p>
+        </div>
+        <div class="col-lg-5">
+          <img class="gif" style ="float: right!important; vertical-align: middle;" src="gif/graphs_square.gif" data-src="gif/graphs_square.gif">
+        </div>
+      </div>
+
+      Divider
+      <hr class="m-y-2">
+    </div></div>
+
+  </div></div> -->
+
+
+
+  <a class="btn" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3" style ="text-align: left; color: white; background-color: 495057">
+    ▪ Personal Projects
+  </a>
+  <div class="collapse" id="collapseExample3">
+<div class=" scrolling-wrapper-flexbox">
+
+
+
+  <div class="card"><div class="container">
+    <div class="row">
+      <div class="col-lg-7">
+        <h2 class="display-5 centerText-lg" >Twitter Tweet Analysis<a href="https://github.com/johnschulz/Tweepy_Tweet_Analyses" target="_blank"><span class="fa-stack fa-small">
+          <i style= "color: rgb(26, 49, 79" class="fab fa-github fa-circle fa-stack-1x"></i>
+        </span></a></h2>
+        <p class="indent">A Python and Twitter API program that prompts the user to input the account name of their interest. The program returns a graph which compares the user of interests likes and retweets for thier past 200 posts.</p>
+        </div>
+      <div class="col-lg-5">
+        <img class="gif" style ="float: right!important; vertical-align: middle;" src="gif/tweepy_square.png" data-src="gif/tweepy_square.png">
+      </div>
+    </div>
+
+  </div></div>
+
+
+  <div class="card"><div class="container">
+    <div class="row">
+      <div class="col-lg-7">
+        <h2 class="display-5 centerText-lg">SpotifyUp<a href="https://github.com/johnschulz/spotifyup" target="_blank"><span class="fa-stack fa-small">
+          <i style= "color: rgb(26, 49, 79" class="fab fa-github fa-circle fa-stack-1x"></i>
+        </span></a></h2>
+        <p class="indent">A Javascript React app that is hosted with Heroku and uses Spotify's API to access user's playlists. The application gives a preview of playlists, allows you to filter them and determine the amount of hours in them. Visit <a href = https://spotifyup.herokuapp.com/>here</a>.</p>
+      </div>
+      <div class="col-lg-5">
+        <img class="gif" style ="float: right!important; vertical-align: middle;" src="gif/spotifyUp_square.png" data-src="gif/spotifyUp_square.png">
+      </div>
+    </div></div></div>
+
+
+
+  <div class="card"><div class="container">
+    <div class="row">
+      <div class="col-lg-7">
+        <h2 class="display-5 centerText-lg">Google Sheets Scheduler<a href="https://github.com/johnschulz/Northmoor_Scheduler_And_Budgeter" target="_blank"><span class="fa-stack fa-small">
+          <i style= "color: rgb(26, 49, 79" class="fab fa-github fa-circle fa-stack-1x"></i>
+        </span></a></h2>
+        <p class="indent">A google sheets scheduler to ensure that employees were not scheduled on their desired days off. The program uses Google Sheets API and python scripts to update a google sheet with shifts and budgeting.</p>
+      </div>
+      <div class="col-lg-5">
+        <img class="gif" style ="float: right!important; vertical-align: middle;" src="gif/scheduler_square.png" data-src="gif/scheduler_square.png">
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <hr class="m-y-2">
+  </div></div>
+
+</div></div>
   </section>
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
         <div class="my-auto">
@@ -384,13 +520,13 @@
         </div>
       </section>
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
+      <!-- <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
         <div class="my-auto">
           <h2 class="mb-5">Interests</h2>
           <p></p>
           <p class="mb-0"></p>
         </div>
-      </section>
+      </section> -->
 
       <section class = "resume-section p-3 p-lg-5" id = "photos">
         <h2 class="mb-5">Photos</h2>
@@ -435,11 +571,12 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for this template -->
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/resume.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+
     <script src="js/jquery.easing.1.3.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/jquery.stellar.min.js"></script>
@@ -454,73 +591,4 @@
 
 
 </body>
-  <!--<head>
-    <title>John Schulz</title>
-    <link rel="stylesheet" href="css/bootstrap.css"></link>
-    <script async src="./js/index.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  </head>
-  <body style="background-color: white">
-    <p>jsjjas</p>
-    <div>
-      <applet CODE="proj2copy/amazons/Main.class" WIDTH="500" HEIGHT="500"></applet>
-    </div>
-    <div class="row">
-      <div class="column1">
-        <img src="img/logo.png">
-      </div>
-    </div>
-    <div class="row">
-      <div class="column">
-        <img src="img/canyon.jpg">
-        <img src="img/bird.jpeg">
-        <img src="img/green.jpg">
-        <img src="img/lake.jpg">
-        <img src="img/road.jpg">
-        <img src="img/ski.jpg">
-      </div>
-      <div class="column">
-        <img src="img/snow.jpg">
-        <img src="img/teton.jpg">
-        <img src="img/tree.jpg">
-        <img src="img/west.jpg">
-        <img src="img/crow.jpeg">
-        <img src="img/dye.jpeg">
-      </div>
-      <div class="column">
-        <img src="img/flower.jpeg">
-        <img src="img/light.jpeg">
-        <img src="img/lily.jpeg">
-        <img src="img/moving.jpeg">
-        <img src="img/dark.jpeg">
-        <img src="img/copy.jpg">
-      </div>
-      <div class="column">
-        <img src="img/swift.jpeg">
-        <img src="img/up.jpeg">
-        <img src="img/rock.jpeg">
-        <img src="img/shadow.jpeg">
-        <img src="img/surf.jpeg">
-        <p>Copyright © John Schulz All rights reserved</p>
-        <p>Email: johnschulz@berkeley.edu</p>
-        <p>Phone: 224.422.7725</p>
-      </div>
-    </div>
--->
-<!--    <nav class="navbar navbar-expand-lg sticky-top navbar-light">
-      <a class="navbar-brand" href="#">Home<span class="sr-only">(current)</span></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link" href="#">Photography</a>
-          <a class="nav-item nav-link" href="#">Resume</a>
-          <a class="nav-item nav-link" href="#">Projects</a>
-        </div>
-      </div>
-    </nav>
-
-  </body>-->
 </html>
